@@ -5,24 +5,26 @@
  */
 package myownproject;
 
-import java.util.Scanner;
-
 /**
  *
  * @author shekh
  */
-public class Scanning {
+public class Starpyramid1 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String username;
-        Scanner my = new Scanner(System.in);
-        System.out.println("enter user name");
-        username = my.nextLine();
-        System.out.println("enter number");
-        int i = my.nextInt();
-        System.out.println(username + " " + i);
+        for (int i = 1; i <5; i++) {
+            for (int j = 1; j <5-i; j++) {
+                System.out.print(" ");
+
+            }
+            for(int k=1;k<=i;k++){
+            System.out.print(k+" ");
+
+        }
+                    System.out.println();
+}
     }
 }

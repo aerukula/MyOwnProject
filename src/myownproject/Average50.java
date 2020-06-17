@@ -5,24 +5,27 @@
  */
 package myownproject;
 
-import java.util.Scanner;
-
 /**
  *
  * @author shekh
  */
-public class Scanning {
+public class Average50 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        String username;
-        Scanner my = new Scanner(System.in);
-        System.out.println("enter user name");
-        username = my.nextLine();
-        System.out.println("enter number");
-        int i = my.nextInt();
-        System.out.println(username + " " + i);
+        double sum = 0;
+        int n = 50;
+        double avg;
+        for (int i = 1; i <= n; i++) {
+            sum = sum + i;
+
+        }
+        avg = sum / n;
+        System.out.println(sum);
+        System.out.println("The average of first 50 numbers: " + avg);
+
     }
+
 }
